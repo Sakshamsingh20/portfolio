@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saksham Singh - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a192f; /* A professional dark navy blue */
+            color: #ccd6f6; /* A light, soft text color for readability */
+        }
+        /* A custom accent color */
+        .text-accent {
+            color: #64ffda;
+        }
+        .bg-accent {
+            background-color: #64ffda;
+        }
+        .border-accent {
+            border-color: #64ffda;
+        }
+        /* Custom background for project cards and other elements */
+        .bg-light-navy {
+            background-color: #112240;
+        }
+        /* Adding a subtle glow effect to the accent color for buttons and links */
+        .glow-effect {
+            transition: all 0.3s ease;
+        }
+        .glow-effect:hover {
+            box-shadow: 0 0 15px rgba(100, 255, 218, 0.5);
+            transform: translateY(-3px);
+        }
+        /* Animation for elements fading in on scroll */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="leading-relaxed antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-opacity-90 backdrop-blur-md bg-[#0a192f]/80 shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-accent">SS</a>
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="#about" class="hover:text-accent transition-colors duration-300">About</a>
+                <a href="#certifications" class="hover:text-accent transition-colors duration-300">Certifications</a>
+                <a href="#projects" class="hover:text-accent transition-colors duration-300">Projects</a>
+                <a href="#contact" class="hover:text-accent transition-colors duration-300">Contact</a>
+                <!-- TODO: Upload your resume PDF and link to it here -->
+                <a href="#" class="border border-accent text-accent px-4 py-2 rounded-md hover:bg-accent hover:text-gray-900 transition-all duration-300 glow-effect">Resume</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-2xl">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
+            <a href="#about" class="block hover:text-accent transition-colors duration-300">About</a>
+            <a href="#certifications" class="block hover:text-accent transition-colors duration-300">Certifications</a>
+            <a href="#projects" class="block hover:text-accent transition-colors duration-300">Projects</a>
+            <a href="#contact" class="block hover:text-accent transition-colors duration-300">Contact</a>
+            <a href="#" class="block border border-accent text-accent mt-2 px-4 py-2 rounded-md hover:bg-accent hover:text-gray-900 transition-all duration-300 text-center">Resume</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 md:px-12 lg:px-24">
+
+        <!-- Hero Section -->
+        <section id="hero" class="min-h-screen flex flex-col justify-center fade-in-section">
+            <div>
+                <p class="text-accent text-lg mb-4">Hi, my name is</p>
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-[#ccd6f6]">Saksham Singh.</h1>
+                <h2 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-[#8892b0]">I transform data into insights.</h2>
+                <p class="max-w-2xl mt-6 text-lg text-[#8892b0]">
+                    I'm a results-driven B.Tech student specializing in data analytics and machine learning. I'm proficient in developing end-to-end applications, from data ingestion to creating insightful dashboards, and I am passionate about leveraging generative AI to solve complex business problems.
+                </p>
+                <div class="mt-8">
+                    <a href="#projects" class="text-accent border border-accent px-8 py-4 rounded-md text-lg hover:bg-accent hover:text-gray-900 transition-all duration-300 glow-effect">
+                        Check out my projects!
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-24 fade-in-section">
+            <h2 class="text-3xl font-bold mb-8 flex items-center">
+                <span class="text-accent mr-3">01.</span> About Me
+                <span class="block h-px w-full bg-gray-700 ml-4"></span>
+            </h2>
+            <div class="grid md:grid-cols-5 gap-12 items-center">
+                <div class="md:col-span-3 text-lg text-[#8892b0] space-y-4">
+                    <p>
+                        Hello! I'm Saksham, a computer science student with a deep interest in the stories that data can tell. My journey into technology is driven by a curiosity to understand complex systems and a passion for building tools that are both intelligent and practical.
+                    </p>
+                    <p>
+                        I'm currently pursuing my B.Tech at VIT Bhopal University, where I'm honing my skills in machine learning, data analysis, and software development. My goal is to build applications that not only function flawlessly but also provide real-world value and intuitive user experiences.
+                    </p>
+                     <p>Here are a few technologies I've been working with recently:</p>
+                    <ul class="grid grid-cols-2 gap-2 list-inside">
+                        <li class="before:content-['▹'] before:text-accent before:mr-2">Python (pandas, NumPy)</li>
+                        <li class="before:content-['▹'] before:text-accent before:mr-2">JavaScript</li>
+                        <li class="before:content-['▹'] before:text-accent before:mr-2">SQL & MySQL</li>
+                        <li class="before:content-['▹'] before:text-accent before:mr-2">Power BI & Tableau</li>
+                        <li class="before:content-['▹'] before:text-accent before:mr-2">Scikit-learn & NLP</li>
+                        <li class="before:content-['▹'] before:text-accent before:mr-2">Generative AI</li>
+                    </ul>
+                </div>
+                <div class="md:col-span-2 relative">
+                    <!-- TODO: Replace with a professional photo of yourself -->
+                    <div class="w-full h-auto rounded-lg overflow-hidden group">
+                         <img src="https://placehold.co/400x400/112240/64ffda?text=Saksham's+Photo" alt="Saksham Singh" class="rounded-lg group-hover:scale-105 transition-transform duration-300">
+                         <div class="absolute inset-0 bg-accent opacity-20 group-hover:opacity-0 transition-opacity duration-300 rounded-lg"></div>
+                         <div class="absolute inset-0 border-2 border-accent rounded-lg transform translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-300"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="py-24 fade-in-section">
+            <h2 class="text-3xl font-bold mb-8 flex items-center">
+                <span class="text-accent mr-3">02.</span> Certifications
+                <span class="block h-px w-full bg-gray-700 ml-4"></span>
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6 text-lg text-[#8892b0]">
+                 <div class="bg-light-navy p-4 rounded-lg flex items-center space-x-4 hover:shadow-xl transition-shadow duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0"><path d="M12 10v4"></path><path d="M12 16.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"></path><path d="M7.4 22A5.4 5.4 0 0 1 2 16.6V7.4A5.4 5.4 0 0 1 7.4 2h9.2A5.4 5.4 0 0 1 22 7.4v9.2a5.4 5.4 0 0 1-5.4 5.4z"></path></svg>
+                    <div>
+                        <h3 class="font-semibold text-[#ccd6f6]">Data Analytics with Generative AI</h3>
+                        <p class="text-sm">Simplilearn</p>
+                    </div>
+                </div>
+                <div class="bg-light-navy p-4 rounded-lg flex items-center space-x-4 hover:shadow-xl transition-shadow duration-300">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0"><path d="M12 10v4"></path><path d="M12 16.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"></path><path d="M7.4 22A5.4 5.4 0 0 1 2 16.6V7.4A5.4 5.4 0 0 1 7.4 2h9.2A5.4 5.4 0 0 1 22 7.4v9.2a5.4 5.4 0 0 1-5.4 5.4z"></path></svg>
+                    <div>
+                        <h3 class="font-semibold text-[#ccd6f6]">Oracle Cloud Infrastructure - AI Foundation</h3>
+                        <p class="text-sm">Oracle</p>
+                    </div>
+                </div>
+                <div class="bg-light-navy p-4 rounded-lg flex items-center space-x-4 hover:shadow-xl transition-shadow duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0"><path d="M12 10v4"></path><path d="M12 16.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"></path><path d="M7.4 22A5.4 5.4 0 0 1 2 16.6V7.4A5.4 5.4 0 0 1 7.4 2h9.2A5.4 5.4 0 0 1 22 7.4v9.2a5.4 5.4 0 0 1-5.4 5.4z"></path></svg>
+                    <div>
+                        <h3 class="font-semibold text-[#ccd6f6]">Machine Learning Using Python</h3>
+                        <p class="text-sm">Simplilearn</p>
+                    </div>
+                </div>
+                <div class="bg-light-navy p-4 rounded-lg flex items-center space-x-4 hover:shadow-xl transition-shadow duration-300">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0"><path d="M12 10v4"></path><path d="M12 16.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"></path><path d="M7.4 22A5.4 5.4 0 0 1 2 16.6V7.4A5.4 5.4 0 0 1 7.4 2h9.2A5.4 5.4 0 0 1 22 7.4v9.2a5.4 5.4 0 0 1-5.4 5.4z"></path></svg>
+                    <div>
+                        <h3 class="font-semibold text-[#ccd6f6]">Cloud Computing</h3>
+                        <p class="text-sm">NPTEL (IIT Kharagpur)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projects Section -->
+        <section id="projects" class="py-24 fade-in-section">
+            <h2 class="text-3xl font-bold mb-8 flex items-center">
+                <span class="text-accent mr-3">03.</span> Some Things I've Built
+                <span class="block h-px w-full bg-gray-700 ml-4"></span>
+            </h2>
+            <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
+                
+                <!-- Project 1 -->
+                <article class="bg-light-navy p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col glow-effect">
+                    <div class="flex justify-between items-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                        <div class="space-x-4">
+                            <!-- TODO: Replace with your project's GitHub link -->
+                            <a href="https://github.com/Sakshamsingh20" class="hover:text-accent"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                            <!-- TODO: Replace with your project's live link -->
+                            <a href="#" class="hover:text-accent"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-[#ccd6f6] mb-2">TrackMyTrain.live</h3>
+                    <p class="text-[#8892b0] flex-grow">
+                        Engineered a full-stack web application to provide real-time train tracking. Integrated a live transit API to ingest and process data for over 500 daily routes.
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-x-4 text-sm text-gray-400">
+                        <span>JavaScript</span>
+                        <span>Full-Stack</span>
+                        <span>Live API</span>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="bg-light-navy p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col glow-effect">
+                    <div class="flex justify-between items-center mb-4">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                        <div class="space-x-4">
+                            <a href="https://github.com/Sakshamsingh20" class="hover:text-accent"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                            <a href="#" class="hover:text-accent"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-[#ccd6f6] mb-2">Global Weather Forecast Site</h3>
+                    <p class="text-[#8892b0] flex-grow">
+                        Architected a responsive weather platform that fetches and displays data from a live weather API, delivering 7-day forecasts with over 95% accuracy.
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-x-4 text-sm text-gray-400">
+                        <span>JavaScript</span>
+                        <span>HTML/CSS</span>
+                        <span>API Integration</span>
+                    </div>
+                </article>
+
+                 <!-- Project 3 -->
+                <article class="bg-light-navy p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col glow-effect">
+                    <div class="flex justify-between items-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                        <div class="space-x-4">
+                            <a href="https://github.com/Sakshamsingh20" class="hover:text-accent"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-[#ccd6f6] mb-2">KBC Quiz Game</h3>
+                    <p class="text-[#8892b0] flex-grow">
+                        Developed an interactive quiz game in Python, featuring a dynamic scoring system and a question bank of over 200 items to increase user engagement.
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-x-4 text-sm text-gray-400">
+                        <span>Python</span>
+                        <span>Game Logic</span>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="bg-light-navy p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col glow-effect">
+                    <div class="flex justify-between items-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                        <div class="space-x-4">
+                            <a href="https://github.com/Sakshamsingh20" class="hover:text-accent"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-[#ccd6f6] mb-2">Fuel Blend Prediction Model</h3>
+                    <p class="text-[#8892b0] flex-grow">
+                        Designed and trained a predictive model using Scikit-learn to forecast fuel blend ratios, achieving 85% accuracy on the test dataset.
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-x-4 text-sm text-gray-400">
+                        <span>Scikit-learn</span>
+                        <span>Machine Learning</span>
+                        <span>Python</span>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24 text-center fade-in-section">
+            <h2 class="text-2xl font-bold mb-2 text-accent">What's Next?</h2>
+            <h3 class="text-4xl font-extrabold text-[#ccd6f6] mb-4">Get In Touch</h3>
+            <p class="max-w-xl mx-auto text-[#8892b0] mb-8">
+                My inbox is always open. Whether you have a question, a potential opportunity, or just want to say hi, I'll do my best to get back to you!
+            </p>
+            <a href="mailto:sakshamsingh20aug2005@gmail.com" class="text-accent border border-accent px-8 py-4 rounded-md text-lg hover:bg-accent hover:text-gray-900 transition-all duration-300 glow-effect">
+                Say Hello
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-gray-500 text-sm">
+        <div class="flex justify-center space-x-6 mb-4 md:hidden">
+            <a href="https://github.com/Sakshamsingh20" class="hover:text-accent"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+            <a href="https://linkedin.com/in/saksham-singh-aug" class="hover:text-accent"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+        </div>
+        <p>Designed & Built by Saksham Singh &copy; 2025</p>
+    </footer>
+
+    <!-- Social Links Side Bar -->
+    <div class="hidden md:block fixed bottom-0 left-12 z-10">
+        <div class="flex flex-col items-center space-y-6">
+            <a href="https://github.com/Sakshamsingh20" class="hover:text-accent transform hover:-translate-y-1 transition-transform duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+            <a href="https://linkedin.com/in/saksham-singh-aug" class="hover:text-accent transform hover:-translate-y-1 transition-transform duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+            <div class="h-24 w-px bg-gray-700 mt-6"></div>
+        </div>
+    </div>
+     <div class="hidden md:block fixed bottom-0 right-12 z-10">
+        <div class="flex flex-col items-center space-y-6">
+            <a href="mailto:sakshamsingh20aug2005@gmail.com" class="text-sm tracking-widest [writing-mode:vertical-lr] hover:text-accent transform hover:-translate-y-1 transition-transform duration-300">
+                sakshamsingh20aug2005@gmail.com
+            </a>
+            <div class="h-24 w-px bg-gray-700 mt-6"></div>
+        </div>
+     </div>
+
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // JavaScript for fade-in animations on scroll
+        const sections = document.querySelectorAll('.fade-in-section');
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            rootMargin: '0px',
+            threshold: 0.1
+        });
+        
+        sections.forEach(section => {
+             observer.observe(section);
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu on link click
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
+
+
