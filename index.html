@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saksham Singh - Portfolio</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -52,7 +50,6 @@
 </head>
 <body class="leading-relaxed antialiased">
 
-    <!-- Header & Navigation -->
     <header class="fixed top-0 left-0 right-0 z-50 bg-opacity-90 backdrop-blur-md bg-[#0a192f]/80 shadow-md">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="text-2xl font-bold text-accent">SS</a>
@@ -62,14 +59,12 @@
                 <a href="#achievements" class="hover:text-accent transition-colors duration-300">Achievements</a>
                 <a href="#projects" class="hover:text-accent transition-colors duration-300">Projects</a>
                 <a href="#contact" class="hover:text-accent transition-colors duration-300">Contact</a>
-                <!-- TODO: Upload your resume PDF and link to it here -->
                 <a href="#" class="border border-accent text-accent px-4 py-2 rounded-md hover:bg-accent hover:text-gray-900 transition-all duration-300 glow-effect">Resume</a>
             </nav>
             <button id="mobile-menu-button" class="md:hidden text-2xl">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
             </button>
         </div>
-        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
             <a href="#about" class="block hover:text-accent transition-colors duration-300">About</a>
             <a href="#certifications" class="block hover:text-accent transition-colors duration-300">Certifications</a>
@@ -82,7 +77,6 @@
 
     <main class="container mx-auto px-6 md:px-12 lg:px-24">
 
-        <!-- Hero Section -->
         <section id="hero" class="min-h-screen flex flex-col justify-center fade-in-section">
             <div>
                 <p class="text-accent text-lg mb-4">Hi, my name is</p>
@@ -99,7 +93,6 @@
             </div>
         </section>
 
-        <!-- About Section -->
         <section id="about" class="py-24 fade-in-section">
             <h2 class="text-3xl font-bold mb-8 flex items-center">
                 <span class="text-accent mr-3">01.</span> About Me
@@ -124,19 +117,15 @@
                     </ul>
                 </div>
                 <div class="md:col-span-2 relative">
-                    <!-- TODO: Replace with a professional photo of yourself -->
                     <div class="w-full h-auto rounded-lg overflow-hidden group">
-                         <!-- V V V V V  REPLACE THIS LINK V V V V V -->
-                         <img src="saksham.png" alt="Saksham Singh" class="rounded-lg group-hover:scale-105 transition-transform duration-300">
-                         <!-- ^ ^ ^ ^ ^  REPLACE THIS LINK ^ ^ ^ ^ ^ -->
-                         <div class="absolute inset-0 bg-accent opacity-20 group-hover:opacity-0 transition-opacity duration-300 rounded-lg"></div>
-                         <div class="absolute inset-0 border-2 border-accent rounded-lg transform translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-300"></div>
+                        <img src="saksham.png" alt="Saksham Singh" class="rounded-lg group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-accent opacity-20 group-hover:opacity-0 transition-opacity duration-300 rounded-lg"></div>
+                        <div class="absolute inset-0 border-2 border-accent rounded-lg transform translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-300"></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Certifications Section -->
         <section id="certifications" class="py-24 fade-in-section">
             <h2 class="text-3xl font-bold mb-8 flex items-center">
                 <span class="text-accent mr-3">02.</span> Certifications
@@ -188,7 +177,6 @@
             </div>
         </section>
 
-        <!-- Achievements & Hackathons Section -->
         <section id="achievements" class="py-24 fade-in-section">
             <h2 class="text-3xl font-bold mb-8 flex items-center">
                 <span class="text-accent mr-3">03.</span> Achievements & Hackathons
@@ -233,7 +221,6 @@
             </div>
         </section>
         
-        <!-- Projects Section -->
         <section id="projects" class="py-24 fade-in-section">
             <h2 class="text-3xl font-bold mb-8 flex items-center">
                 <span class="text-accent mr-3">04.</span> Some Things I've Built
@@ -241,14 +228,11 @@
             </h2>
             <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
                 
-                <!-- Project 1 -->
                 <article class="bg-light-navy p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col glow-effect">
                     <div class="flex justify-between items-center mb-4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
                         <div class="space-x-4">
-                            <!-- TODO: Replace with your project's GitHub link -->
                             <a href="https://github.com/Sakshamsingh20" class="hover:text-accent"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
-                            <!-- TODO: Replace with your project's live link -->
                             <a href="#" class="hover:text-accent"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
                         </div>
                     </div>
@@ -263,7 +247,6 @@
                     </div>
                 </article>
 
-                <!-- Project 2 -->
                 <article class="bg-light-navy p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col glow-effect">
                     <div class="flex justify-between items-center mb-4">
                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
@@ -283,8 +266,7 @@
                     </div>
                 </article>
 
-                 <!-- Project 3 -->
-                <article class="bg-light-navy p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col glow-effect">
+                 <article class="bg-light-navy p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col glow-effect">
                     <div class="flex justify-between items-center mb-4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
                         <div class="space-x-4">
@@ -301,7 +283,6 @@
                     </div>
                 </article>
 
-                <!-- Project 4 -->
                 <article class="bg-light-navy p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col glow-effect">
                     <div class="flex justify-between items-center mb-4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
@@ -320,10 +301,27 @@
                     </div>
                 </article>
 
-            </div>
+                <article class="bg-light-navy p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col glow-effect">
+                    <div class="flex justify-between items-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg>
+                        <div class="space-x-4">
+                            <a href="https://github.com/Sakshamsingh20" class="hover:text-accent" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                            <a href="http://Saksham2005.pythonanywhere.com" class="hover:text-accent" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-[#ccd6f6] mb-2">TextUtils - Text Analysis Tool</h3>
+                    <p class="text-[#8892b0] flex-grow">
+                        A dynamic web app for text analysis and manipulation, featuring real-time word/character counts, case conversion, and a dark/light mode toggle.
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-x-4 text-sm text-gray-400">
+                        <span>React.js</span>
+                        <span>Python</span>
+                        <span>JavaScript</span>
+                    </div>
+                </article>
+                </div>
         </section>
 
-        <!-- Contact Section -->
         <section id="contact" class="py-24 text-center fade-in-section">
             <h2 class="text-2xl font-bold mb-2 text-accent">What's Next?</h2>
             <h3 class="text-4xl font-extrabold text-[#ccd6f6] mb-4">Get In Touch</h3>
@@ -337,7 +335,6 @@
 
     </main>
 
-    <!-- Footer -->
     <footer class="py-8 text-center text-gray-500 text-sm">
         <div class="flex justify-center space-x-6 mb-4 md:hidden">
             <a href="https://github.com/Sakshamsingh20" class="hover:text-accent"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
@@ -346,7 +343,6 @@
         <p>Designed & Built by Saksham Singh &copy; 2025</p>
     </footer>
 
-    <!-- Social Links Side Bar -->
     <div class="hidden md:block fixed bottom-0 left-12 z-10">
         <div class="flex flex-col items-center space-y-6">
             <a href="https://github.com/Sakshamsingh20" class="hover:text-accent transform hover:-translate-y-1 transition-transform duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
@@ -409,8 +405,3 @@
 
 </body>
 </html>
-
-
-
-
-
